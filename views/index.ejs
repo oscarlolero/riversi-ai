@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reversi juego</title>
+  <style>
+    .tablero-html {
+      border-collapse: collapse;
+      border: 4px solid black
+    }
+
+    .celda {
+      border: 4px solid black;
+      width: 70px;
+      height: 70px;
+    }
+    .verde {
+      background-color: darkolivegreen;
+    }
+    .blanca {
+      background-color: white;
+    }
+    .negra {
+      background-color: black;
+    }
+    .ficha {
+      width: 60px;
+      height: 60px;
+      margin-left: 5px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+<h1>Reversi</h1>
+<table class="tablero-html">
+  <tr>
+    <td class="celda verde" id="r00"></td>
+    <td class="celda verde" id="r01"></td>
+    <td class="celda verde" id="r02"></td>
+    <td class="celda verde" id="r03"></td>
+    <td class="celda verde" id="r04"></td>
+    <td class="celda verde" id="r05"></td>
+    <td class="celda verde" id="r06"></td>
+    <td class="celda verde" id="r07"></td>
+  </tr>
+  <tr>
+    <td class="celda verde" id="r10"></td>
+    <td class="celda verde" id="r11"></td>
+    <td class="celda verde" id="r12"></td>
+    <td class="celda verde" id="r13"></td>
+    <td class="celda verde" id="r14"></td>
+    <td class="celda verde" id="r15"></td>
+    <td class="celda verde" id="r16"></td>
+    <td class="celda verde" id="r17"></td>
+  </tr>
+  <tr>
+    <td class="celda verde" id="r20"></td>
+    <td class="celda verde" id="r21"></td>
+    <td class="celda verde" id="r22"></td>
+    <td class="celda verde" id="r23"></td>
+    <td class="celda verde" id="r24"></td>
+    <td class="celda verde" id="r25"></td>
+    <td class="celda verde" id="r26"></td>
+    <td class="celda verde" id="r27"></td>
+  </tr>
+  <tr>
+    <td class="celda verde" id="r30"></td>
+    <td class="celda verde" id="r31"></td>
+    <td class="celda verde" id="r32"></td>
+    <td class="celda verde" id="r33"></td>
+    <td class="celda verde" id="r34"></td>
+    <td class="celda verde" id="r35"></td>
+    <td class="celda verde" id="r36"></td>
+    <td class="celda verde" id="r37"></td>
+  </tr>
+  <tr>
+    <td class="celda verde" id="r40"></td>
+    <td class="celda verde" id="r41"></td>
+    <td class="celda verde" id="r42"></td>
+    <td class="celda verde" id="r43"></td>
+    <td class="celda verde" id="r44"></td>
+    <td class="celda verde" id="r45"></td>
+    <td class="celda verde" id="r46"></td>
+    <td class="celda verde" id="r47"></td>
+  </tr>
+  <tr>
+    <td class="celda verde" id="r50"></td>
+    <td class="celda verde" id="r51"></td>
+    <td class="celda verde" id="r52"></td>
+    <td class="celda verde" id="r53"></td>
+    <td class="celda verde" id="r54"></td>
+    <td class="celda verde" id="r55"></td>
+    <td class="celda verde" id="r56"></td>
+    <td class="celda verde" id="r57"></td>
+  </tr>
+  <tr>
+    <td class="celda verde" id="r60"></td>
+    <td class="celda verde" id="r61"></td>
+    <td class="celda verde" id="r62"></td>
+    <td class="celda verde" id="r63"></td>
+    <td class="celda verde" id="r64"></td>
+    <td class="celda verde" id="r65"></td>
+    <td class="celda verde" id="r66"></td>
+    <td class="celda verde" id="r67"></td>
+  </tr>
+  <tr>
+    <td class="celda verde" id="r70"></td>
+    <td class="celda verde" id="r71"></td>
+    <td class="celda verde" id="r72"></td>
+    <td class="celda verde" id="r73"></td>
+    <td class="celda verde" id="r74"></td>
+    <td class="celda verde" id="r75"></td>
+    <td class="celda verde" id="r76"></td>
+    <td class="celda verde" id="r77"></td>
+  </tr>
+</table>
+  <br>
+    <h2>Marcador:</h2>
+    <h2>Blancos (computadora):<span id="puntuaje-blancos">2</span></h2>
+    <h2>Negras (jugador):<span id=puntuaje-negros>2</span></h2>
+<script src="reversi.js"></script>
+</body>
+</html>
